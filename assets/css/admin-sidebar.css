@@ -1,0 +1,75 @@
+body.wp-admin.mywp #adminmenu #collapse-menu {
+  display: none;
+}
+body.wp-admin.mywp #adminmenu li.mywp-sidebar-item {
+  position: relative;
+}
+@media screen and (max-width: 782px) {
+  body.wp-admin.mywp.auto-fold #adminmenu li.mywp-sidebar-item {
+    width: auto;
+  }
+}
+body.wp-admin.mywp #adminmenu li.wp-submenu-head {
+  cursor: default;
+  opacity: 0.5;
+}
+body.wp-admin.mywp #adminmenu li.mywp-sidebar-item .mywp-sidebar-item-link {
+  padding-left: 0;
+  padding-right: 0;
+}
+body.wp-admin.mywp #adminmenu li.mywp-sidebar-item .mywp-title {
+  margin: 0 0 0 6px;
+}
+body.wp-admin.mywp #adminmenu li.mywp-sidebar-item .mywp-sidebar-item-childs {
+  margin: 0;
+}
+body.wp-admin.mywp #adminmenu li.mywp-sidebar-item.wp-has-submenu:hover .mywp-sidebar-item-childs {
+  top: 0;
+}
+@media only screen and (max-width: 960px) {
+  body.wp-admin.mywp.auto-fold #adminmenu li.mywp-sidebar-item.wp-has-submenu:hover .mywp-sidebar-item-childs {
+    position: static;
+  }
+  body.wp-admin.mywp.auto-fold #adminmenu li.mywp-sidebar-item.wp-has-submenu:hover .mywp-sidebar-item-childs .wp-menu-name {
+    position: static;
+    left: 0;
+  }
+}
+@media screen and (max-width: 782px) {
+  body.wp-admin.mywp.auto-fold #adminmenu li.mywp-sidebar-item .mywp-sidebar-item-childs {
+    width: auto;
+  }
+}
+body.wp-admin.mywp #adminmenu li.mywp-sidebar-item .mywp-sidebar-item-childs .mywp-sidebar-item-childs {
+  position: static;
+  padding-left: 20px;
+  width: 140px;
+}
+body.wp-admin.mywp #adminmenu li.mywp-sidebar-item .mywp-sidebar-item-childs .mywp-sidebar-item-link {
+  padding: 2px 0 2px 12px;
+}
+@media screen and (max-width: 782px) {
+  body.wp-admin.mywp.auto-fold #adminmenu li.mywp-sidebar-item .mywp-sidebar-item-link {
+    height: auto;
+  }
+  body.wp-admin.mywp.auto-fold #adminmenu li.mywp-sidebar-item .mywp-sidebar-item-childs .mywp-sidebar-item-link {
+    padding: 2px 0 2px 2px;
+  }
+}
+body.wp-admin.mywp #adminmenu li.mywp-sidebar-item .mywp-sidebar-item-childs .mywp-sidebar-item-link .mywp-sidebar-name {
+  padding: 6px 0;
+}
+body.wp-admin.mywp #adminmenu li.mywp-sidebar-item .separator {
+  height: auto;
+  padding: 7px 0;
+  width: 100%;
+  margin: 0 auto;
+  cursor: default;
+}
+body.wp-admin.mywp #adminmenu li.mywp-sidebar-item .separator:after {
+  background: #fff;
+  height: 1px;
+  opacity: 0.1;
+  display: block;
+  content: "";
+}

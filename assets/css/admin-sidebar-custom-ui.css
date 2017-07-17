@@ -1,0 +1,33 @@
+body.wp-admin.mywp #adminmenuwrap {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute !important;
+  height: 100%;
+}
+body.wp-admin.mywp #adminmenuwrap::-webkit-scrollbar {
+  width: 8px;
+}
+body.wp-admin.mywp #adminmenuwrap::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.6);
+  min-height: 30px;
+  box-shadow: inset 1px 1px 0 rgba(0,0,0,0.1), inset 0 -1px 0 rgba(0,0,0,0.07);
+  border-radius: 8px;
+}
+body.wp-admin.mywp #adminmenuwrap::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+body.wp-admin.mywp #adminmenuwrap::-webkit-scrollbar-corner {
+  background: transparent;
+}
+body.wp-admin.mywp #adminmenu {
+  width: auto;
+}
+body.wp-admin.mywp #adminmenu .wp-submenu {
+  position: static;
+  display: none;
+}
+body.wp-admin.mywp #adminmenu .mywp-sidebar-item.current .wp-submenu,
+body.wp-admin.mywp #adminmenu .mywp-sidebar-item.wp-has-current-submenu .wp-submenu,
+body.wp-admin.mywp #adminmenu .mywp-sidebar-item.selected .wp-submenu {
+  display: block;
+}
